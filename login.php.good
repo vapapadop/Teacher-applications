@@ -1,0 +1,170 @@
+<?php
+
+ session_start();
+ 
+ if (!isset($_SESSION["logMessage"])) 
+		$_SESSION['logMessage']="";
+ 
+ 
+?> 
+<!--!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"-->
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>ΑΙΤΗΣΕΙΣ ΕΚΠΑΙΔΕΥΤΙΚΩΝ - ΣΥΣΤΗΜΑ ΔΙΑΧΕΙΡΙΣΗΣ ΑΙΤΗΣΕΩΝ ΕΚΠΑΙΔΕΥΤΙΚΩΝ</title>
+
+<link type="text/css" rel="stylesheet" href="global/admin_styles.css">
+</head>
+<body onload="document.login.formUsername.focus();">
+
+<table width='100%' height="100%" border='0' cellpadding='0' cellspacing='0'>
+<tr>
+  <td width='200' height="60" valign='center' align='center'><img src="Images/logo_1.gif" /></td>
+  <td class="top_banner" valign='center' align='center' ><b> ΔΙΕΥΘΥΝΣΗ ΔΕΥΤΕΡΟΒΑΘΜΙΑΣ ΕΚΠΑΙΔΕΥΣΗΣ ΑΝΑΤ. ΑΤΤΙΚΗΣ</b></td>
+
+</tr>
+<tr>
+  <td class="top_row_left" height='18'>&nbsp;</td>
+  <td class="top_row_right">&nbsp;</td>
+</tr>
+<tr>
+  <td class="left_column">
+  	<div class='nav_link_selected'>Είσοδος στο Σύστημα</div><div class='nav_link'><a href='Admin/Teachers/eggrafi.php' >Εγγραφή-Απόκτηση Κωδικού Πρόσβασης</a></div><div class='nav_link'><a href='Admin/Teachers/anaktisi.php'>Ανάκτηση Κωδικού Πρόσβασης</a></div>
+  	&nbsp;</td>
+  <td bgcolor="white" valign="top" style="padding: 20px;">
+
+  <table>
+  <tr>
+
+    <td>
+
+    <p class="title">ΑΙΤΗΣΕΙΣ ΕΚΠΑΙΔΕΥΤΙΚΩΝ -  ΕΙΣΟΔΟΣ ΣΤΟ ΣΥΣΤΗΜΑ</p>
+
+    <p class="common_width">
+      Παρακαλούμε εισάγετε <b>Αριθμό Μητρώου (Α.Μ.Μ)</b> και <b>Κωδικό Πρόσβασης(password)</b>  για να εισέλθετε στο σύστημα Υποβολής Αιτήσεων Εκπαιδευτικών.
+     
+    </p>
+<p class="common_width"><b>ΟΔΗΓΙΕΣ:</b><br>
+      1) Για να αποκτήσετε <b>Κωδικό Πρόσβασης(password)</b> επιλέξτε απο το μενού αριστερά τον σύνδεσμο <b>"Εγγραφή-Απόκτηση Κωδικού Πρόσβασης"</b>.
+     
+    </p>
+ <p class="common_width"><br>
+      2) Εάν έχετε ήδη αποκτήσει <b>Κωδικό Πρόσβασης(password)</b> αλλά δεν τον Θυμάστε επιλέξτε απο το μενού αριστερά τον σύνδεσμο <b>"Ανάκτηση Κωδικού Πρόσβασης"</b>.
+     
+    </p>
+    
+   <SCRIPT language=JavaScript type="">
+function validateSubmit() {
+  if(document.login.formUsername.value == "" || document.login.formPassword.value == ""){
+    alert("Δεν συμπληρώσατε τα αναγνωριστικά εισόδου στο σύστημα!!!");
+    document.login.formUsername.value = "";
+    document.login.formPassword.value = "";
+    return false;
+    
+  }
+  
+  return true;
+}
+
+</SCRIPT> 
+    
+    
+    
+    
+    
+       
+    <form name="login" onsubmit="return validateSubmit()" method="POST" action="Scripts/WebPages/Admin/Authenticate.php">
+    
+       
+    <table width="390" cellpadding="1" class="login_outer_table">
+
+    <tr>
+      <td colspan="1">
+
+      <table width="100%" cellpadding="0" cellspacing="1" class="login_inner_table">
+      <tr>
+        <td colspan="2">&nbsp;</td>
+      </tr>
+      <tr>
+      <td>
+
+      <table width="350" cellpadding="0" cellspacing="1">
+      <tr>
+        <td class="login_table_text">Εισάγετε Αριθμό Μητρώου (Α.Μ.Μ)</td>
+        <td><input type="textbox" maxlength="6" size="25" name="formUsername" value=""></td>
+      </tr>
+      <tr>  
+        <td class="login_table_text">Εισάγετε Κωδικό Πρόσβασης (password)</td>
+        <td><input type="Password" maxlength="8" size="25" name="formPassword" value=""></td>
+
+      </tr>
+      
+      
+      
+      </table>
+
+      </td>
+      <td align='center'>
+        <script type="text/javascript">
+        <!--
+        document.write('<input type="submit" value="ΕΙΣΟΔΟΣ">&nbsp;');
+        -->
+        </script>
+      </td>
+      </tr>
+      
+      <tr>
+
+      <td colspan="2">&nbsp;</td>
+      </tr>
+      
+      </table>
+    
+      </td>
+    </tr>
+
+    <tr> <td colspan="2" align=center ><b><span style='color: red'><?php ECHO $_SESSION["logMessage"]; ?></span></b></td>        
+       
+      </tr>
+    
+    
+    
+      
+    </table>
+    
+    </form>
+
+<?php
+
+$_SESSION["logMessage"]="";
+
+?>
+
+
+  </td></tr>
+
+  </table>
+
+  <noscript>
+
+    <br />
+    <div class="error" style="margin:3px;">
+      Για να χρησιμοποιήσετε την εφαρμογή, πρέπει να ενεργοποιήσετε τη javascript στο φυλλομετρητή σας. 
+      Παρακαλούμε ενεργοποιήστε την τώρα και πατήστε το κουμπί ανανέωση στον φυλλομετρητή.
+    </div>
+
+  </noscript>
+</td>
+</tr>
+<tr>
+  <td colspan='4' class="footer"><font color='blue'><b>© <?php echo(Date("Y")); ?>  </b>  ΤΜΗΜΑ ΕΚΠ/ΚΩΝ ΘΕΜΑΤΩΝ - ΠΥΣΔΕ - ΚΕΠΛΗΝΕΤ Δ.Δ.Ε ΑΝΑΤ. ΑΤΤΙΚΗΣ<BR>
+      </font> </td>
+</tr>
+</table>
+
+</body>
+
+</html>
+ 

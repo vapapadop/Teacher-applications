@@ -1,0 +1,212 @@
+/*-------------- global styles ---------------*/
+html { overflow-y: -moz-scrollbars-vertical;}
+body { margin: 0px; }
+td,th,p,input,textarea,select,ul,li { font-family: tahoma, arial; color: black; font-size: 8pt; }
+img { border: none; }
+a:link, a:visited { color: #336699; }
+
+
+/*-------------- page sections ---------------*/
+.top_banner    { background-color: #cccccc; font-size: 14pt;  }
+.top_row_left  { background-color: black; height: 18px; }
+.top_row_right { background-color: #414141; }
+.left_column   { background-color: #efefef; padding: 16px; vertical-align: top; }
+.footer        { background-color: #efefef; height: 30px; text-align: center; }
+.main_content  { padding: 20px; vertical-align: top; }
+.tab_content   {
+  padding: 20px; 
+  vertical-align: top; 
+  background-color: #ffffff; 
+  border-left: 1px solid #999999; 
+  border-right: 1px solid #999999; 
+  border-bottom: 1px solid #999999;
+}
+
+
+/*-------------- nav links -----------------*/
+.nav_link { width: 150px;font-size: 10pt; }
+.nav_link a { width: 100%; display: block; padding: 6px; }
+.nav_link a:hover { color: black; }
+.nav_link_selected { padding: 6px; font-weight: bold; }
+
+
+/*-------------- page titles ---------------*/
+.title {
+  font-family: arial; 
+  letter-spacing: 4px;
+  font-size: 8pt;
+  font-weight: bold;
+  color: #336699; 
+  padding-bottom: 5px;
+}
+.subtitle {
+	font-family: arial;
+  font-size: 8pt;
+  color: #666666;
+  letter-spacing: 1px;
+}
+.underline { border-bottom: 1px solid #cccccc; }
+
+/*----------------- tabs -------------------*/
+.tab_selected {
+  background-color: #ffffff; 
+  border-top: 1px solid #999999;
+  border-bottom: 1px solid #ffffff; 
+  height: 21px;
+  text-align: center;
+  font-weight: bold;
+}
+.tab_selected a:link, .tab_selected a:visited {
+  text-decoration: none;
+  color: black;
+}
+.tab_selected a:hover {
+  text-decoration: underline;
+  color: #336699; 
+}
+
+.tab_not_selected {
+  border-top: 1px solid #999999; 
+  border-bottom: 1px solid #999999; 
+  background-color: #efefef;
+  height: 21px;
+  text-align: center;
+  font-weight: bold;
+}
+
+
+/*-------------- list tables ---------------*/
+.list_table      { border: 1px solid #cccccc; }
+.list_table th   { background-color: #336699; color: white; height: 18px; }
+.list_table th a, .list_table th a:visited { color: white; }
+.list_table th.del  { text-align: center; background-color: #660000; }
+.list_table th.edit { text-align: center; background-color: #333333; }
+
+.list_table tr     { background-color: #efefef; height: 20px; }
+.list_table td.del { text-align: center; background-color: #660000; }
+.list_table td.del a:link, .list_table td.del a:visited { color: white; text-decoration: none; }
+.list_table td.del a:hover { text-decoration: underline; }
+
+
+/*----------------- UI messages ------------------*/
+.notify { 
+  border: 1px solid #336699;
+  background-color: #ffffee;
+  color: #336699;
+  padding: 8px;
+  width: 500px;
+}
+.error {
+  border: 1px solid #cc0000;
+  background-color: #ffffee;
+  color: black;
+  padding: 8px;
+  width: 500px;
+}
+.error2 {
+  border: 1px solid #cc0000;
+  background-color: #ffffee;
+  color: #cc0000;
+  padding: 8px;
+  width: 500px;
+}
+.error span {
+  color: #cc0000;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+
+/*-------------- print page ----------------*/
+.print_title    { font-family: arial; font-size: 14px; font-weight: bold; }
+.print_table    { border: 1px solid #dddddd; }
+.print_table th { border: 1px solid #cccccc; background-color: #efefef; }
+.print_table td { border: 1px solid #cccccc; }
+.print_th       { text-align: left; width: 15%; font-family: arial; font-size: 8pt; }
+
+
+/*----------------- misc -------------------*/
+.next_step { color: #336699; font-weight: bold; }
+.ul_no_indent { padding-left: 0px; margin-left: 20px; }
+.common_width { width: 650px; }
+.highlighted_text { color: #990000; }
+.highlighted_text2 { color: #336699; }
+.highlighted_cell { 
+  color: #990000; 
+  background-color: #efefef;
+  text-align: center;
+}
+.red { color: #cc0000; }
+.bold { font-weight: bold; }
+.strong_button {
+  font-weight: bold;
+  color: #336699;
+}
+.page_break { page-break-after: always; }
+.grey_text { color: #666666; }
+.submission_id { color: #666666; width: 25px; }
+.submission_date { width: 100px; }
+.ip_address { width: 80px; }
+.form_id { color: #666666; }
+
+#nav_previous_page { color: #cccccc; }
+#nav_next_page { color: #cccccc; }
+
+/*--------- login / forget pwd pages ---------*/
+.login_outer_table { border: 1px solid #999999; }
+.login_inner_table { background-color: #dddddd; }
+.login_table_text { color: #336699; padding-left: 10px; padding-right: 10px; }
+.login_error { background-color: #efefef; }
+
+
+/*----------- Edit Form: email tab styles -----------*/
+.admin_text { color: #000000; }
+a.admin_text { 
+  text-decoration: none;
+  font-weight: bold;
+}
+a.admin_text:hover { text-decoration: underline; }
+
+.user_text { color: #000000; }
+a.user_text {
+  text-decoration: none;
+  font-weight: bold;
+}
+a.user_text:hover { text-decoration: underline; }
+
+
+a.references_tab { 
+  font-weight: bold; 
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}
+a.references:hover { text-decoration: underline; }
+
+.inner_tab1_selected {
+  background-color: #ffffff; 
+  text-align: center; 
+  border-top: 1px solid #c6c6c6;
+}
+.inner_tab1_not_selected { 
+  background-color: #EFEFEF; 
+  text-align: center; 
+  border-top: 1px solid #c6c6c6;
+  border-bottom: 1px solid #c6c6c6; 
+}
+.inner_tab2 {
+  border-top: 1px solid #cbcbcb; 
+  border-bottom: 1px solid #cbcbcb; 
+  background-color: #E0EBF6;
+  height: 21px;
+  text-align: center;
+}
+
+#inner_tab_content {
+  background-color: #f9f9f9; 
+  border-left: 1px solid #c6c6c6; 
+  border-right: 1px solid #c6c6c6; 
+  border-bottom: 1px solid #c6c6c6; 
+  padding: 10px;
+  background-color: #ffffff;
+}

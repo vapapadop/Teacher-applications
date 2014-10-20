@@ -1,0 +1,30 @@
+.gridTable {
+	BORDER-RIGHT: silver 1px solid; BORDER-TOP: silver 1px solid; FONT-SIZE: 10px; BACKGROUND-IMAGE: url(images/grid_bg.gif); BORDER-LEFT: silver 1px solid; CURSOR: auto; BORDER-BOTTOM: silver 1px solid; FONT-FAMILY: Tahoma,Verdana,Arial,"Sans Serif","Times New Roman"; BORDER-COLLAPSE: collapse; BACKGROUND-COLOR: #ffffff
+}
+.gridHeader {
+	BORDER-RIGHT: silver 1px solid; BORDER-TOP: silver 1px solid; FONT-WEIGHT: bold; FONT-SIZE: 10pt; BACKGROUND-IMAGE: url(../images/tab.gif); BORDER-LEFT: silver 1px solid; COLOR: white; BORDER-BOTTOM: silver 1px solid; FONT-FAMILY: Tahoma,Verdana,Arial,"Sans Serif","Times New Roman"; BORDER-COLLAPSE: collapse; HEIGHT: 25px; TEXT-ALIGN: center
+}
+.gridRowEven {
+	BORDER-RIGHT: silver 1px; BORDER-TOP: silver 1px; FONT-SIZE: 10px; BORDER-LEFT: silver 1px; COLOR: #000000; BORDER-BOTTOM: silver 1px; FONT-FAMILY: Tahoma,Verdana,Arial,"Sans Serif","Times New Roman"; BORDER-COLLAPSE: collapse; HEIGHT: 25px; BACKGROUND-COLOR: #ffffff; TEXT-ALIGN: center
+}
+.gridRowOdd {
+	BORDER-RIGHT: silver 1px solid; BORDER-TOP: silver 1px solid; FONT-WEIGHT: normal; FONT-SIZE: 10px; BORDER-LEFT: silver 1px solid; COLOR: #000000; BORDER-BOTTOM: silver 1px solid; FONT-FAMILY: Tahoma,Verdana,Arial,"Sans Serif","Times New Roman"; BORDER-COLLAPSE: collapse; HEIGHT: 25px; BACKGROUND-COLOR: #f6f6f8; TEXT-ALIGN: center
+}
+.gridRowSelected {
+	FONT-WEIGHT: normal; FONT-SIZE: 10px; COLOR: black; FONT-FAMILY: Tahoma,Verdana,Arial,"Sans Serif","Times New Roman"; HEIGHT: 25px; BACKGROUND-COLOR: #ffeec2; TEXT-ALIGN: center
+}
+.gridRowHighlighted {
+	FONT-WEIGHT: normal; FONT-SIZE: 10px; COLOR: black; FONT-FAMILY: Tahoma,Verdana,Arial,"Sans Serif","Times New Roman"; HEIGHT: 25px; BACKGROUND-COLOR: #e9f2fc; TEXT-ALIGN: center
+}
+.gridPageOfPage {
+	FONT-WEIGHT: bold; FONT-SIZE: 8pt; COLOR: #ffffff; FONT-FAMILY: Tahoma,Verdana,Arial,"Sans Serif","Times New Roman"
+}
+.gridPager {
+	BACKGROUND-IMAGE: url(../images/tab.gif); COLOR: white; BACKGROUND-COLOR: #dbf4ff
+}
+.gridSort {
+	FONT-WEIGHT: bold; FONT-SIZE: 10pt; COLOR: white; FONT-FAMILY: Tahoma,Verdana,Arial,"Sans Serif","Times New Roman"; HEIGHT: 25px; TEXT-ALIGN: center; TEXT-DECORATION: none
+}
+.gridColumn {
+	
+}
